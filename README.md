@@ -36,7 +36,7 @@ CDN:
             //even asynchronously
           	commit({value:state().value+1});
             setTimeout(function(){
-          		commit({value:state().value+1});
+          	  commit({value:state().value+1});
   	        },1000)
           },1000)
           //returning undefined does no change
