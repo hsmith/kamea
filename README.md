@@ -55,6 +55,4 @@ CDN:
   //dispatch action
   store.dispatch({type:'increment'})
 </script>
-
-<hello-world></hello-world>
 ```
