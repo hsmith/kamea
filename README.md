@@ -4,7 +4,7 @@
 
 #Kamea
 Kamea is a store for producing immutable states for es5. It was created to address a number of issues with Redux:
-* Object.assign is messy
+* Object.assign is super useful but also messy
 * Asynchronous operations are awkward to implement
 * Simplification of extremely common patterns
 
