@@ -49,7 +49,7 @@ CDN:
   
   //Subscribe to new states
   store.subscribe(function(state){
-  	console.log(store.state.counter.value);
+  	console.log(state.counter.value);
   })
   
   //dispatch action
