@@ -1,0 +1,36 @@
+<script src="../../kamea"></script>
+<script>
+  var store = Kamea({
+    counter : function(state,action,commit){
+    	switch(action.type){
+        case '#':
+          return {value:0};
+      	case 'increment':
+          return {value:state().value+1};
+        case 'decrement':
+          return {value:state().value-1};
+        case 'step':
+          commit({value:state().value+1});
+          setTimeout(function(){
+          	commit({value:state().value+1});
+            setTimeout(function(){
+          		commit({value:state().value+1});
+              setTimeout(function(){
+                commit({value:state().value+1});
+              },1000)
+  	        },1000)
+          },1000)
+      }
+    }
+  })
+
+  console.log(store.state.counter.value);
+
+  store.subscribe(function(state){
+  	console.log(store.state.counter.value);
+  })
+
+  store.dispatch({type:'increment'})
+  store.dispatch({type:'decrement'})
+  store.dispatch({type:'step'})
+</script>
