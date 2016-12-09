@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Squaredcircle.svg/64px-Squaredcircle.svg.png" alt="Sigil.js logo"/>
+  <img src="http://i.imgur.com/pMKjQLZ.png" alt="Sigil.js logo"/>
 </p>
 
 #Kamea
